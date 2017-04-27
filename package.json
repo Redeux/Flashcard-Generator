@@ -1,0 +1,31 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "Create basic and cloze style flash cards",
+  "main": "CardCreator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redeux/Flashcard-Generator.git"
+  },
+  "keywords": [
+    "Flash",
+    "Card",
+    "Cloze",
+    "Card",
+    "Cloze",
+    "Study",
+    "Memorize"
+  ],
+  "author": "Phil Sautter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Redeux/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/Redeux/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.0.6"
+  }
+}
