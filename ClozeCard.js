@@ -2,9 +2,11 @@
 
 function ClozeCard(text, cloze) {
     if (this instanceof ClozeCard) {
-        this.cloze = cloze.trim();
-        this.fullText = text.trim();
-        this.checkCloze();
+        if (text && cloze) {
+            this.cloze = cloze.trim();
+            this.fullText = text.trim();
+            this.checkCloze();
+        } else consle.log('Error: missing component');
     } else return new ClozeCard(text, cloze);
 }
 

@@ -2,8 +2,13 @@
 
 function BasicCard(front, back) {
     if (this instanceof BasicCard) {
-        this.front = front;
-        this.back = back;
+        if (front && back) {
+            this.front = front;
+            this.back = back;
+        } else {
+            console.log('Error: missing component')
+        }
+
     } else return new BasicCard(front, back);
 }
 
