@@ -186,7 +186,7 @@ function saveCard(card) {
                 if (err) cardArray = [];
                 else cardArray = JSON.parse(data);
                 cardArray.push(card);
-                fs.writeFile(catagory + '.cards', JSON.stringify(cardArray), 'UTF8', (err) => {
+                fs.writeFile(catagory.replace(' ', '_') + '.cards', JSON.stringify(cardArray), 'UTF8', (err) => {
                     if (err) throw err;
                 });
             })
