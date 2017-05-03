@@ -6,7 +6,10 @@ function ClozeCard(text, cloze) {
             this.cloze = cloze.trim();
             this.fullText = text.trim();
             this.checkCloze();
-        } else consle.log('Error: missing component');
+        } else {
+            consle.log('Error: missing component');
+            this.bad = true;
+        }
     } else return new ClozeCard(text, cloze);
 }
 
@@ -19,6 +22,7 @@ ClozeCard.prototype.checkCloze = function() {
         console.log('Error: cloze not found in text');
         this.cloze = undefined;
         this.fullText = undefined;
+        this.bad = true;
     }
 };
 

@@ -6,7 +6,8 @@ function BasicCard(front, back) {
             this.front = front;
             this.back = back;
         } else {
-            console.log('Error: missing component')
+            console.log('Error: missing component');
+            this.bad = true;
         }
 
     } else return new BasicCard(front, back);
